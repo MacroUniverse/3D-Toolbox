@@ -1,0 +1,30 @@
+f1=x^2+y^2-2*c1*x*y-b1^2;
+f2=y^2+z^2-2*c2*y*z-b2^2;
+f3=z^2+x^2-2*c3*y*z-b3^2;
+求导
+df1x=2(x-c1*y)      df1y=2(y-c1*x)      df1z=0        
+df2x=0                   df2y=2(y-c2*z)      df2z=2(z-c2*y)
+df3x=2(x-c3*z)      df3y=0                   df3z=2(z-c3*x)
+
+线性化
+f1=df1x*(x-x0)+df1y*(y-y0)+f1(x0,y0,z0)
+f2=df2y*(y-y0)+df2z*(z-z0)+f2(x0,y0,z0)
+f3=df3z*(z-z0)+df3x*(x-x0)+f3(x0,y0,z0)
+
+求解
+f1=0
+f2=0
+f3=0
+解得
+x =
+(df1y*df3z*f2 -df1y*df2z*f3 -df2y*df3z*f1)/det+x0
+y =
+(df1x*df2z*f3 -df1x*df3z*f2 -df2z*df3x*f1)/det+y0
+z =
+(df1y*df3x*f2 -df1x*df2y*f3 -df2y*df3x*f1)/det+z0
+其中
+det=df1x*df2y*df3z + df1y*df2z*df3x
+
+把x0作为x继续迭代
+
+

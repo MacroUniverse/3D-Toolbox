@@ -1,0 +1,7 @@
+每一个三维模型应该在数据库中有一个存档,格式为rar
+
+内容包括:
+1.相机型号及对焦位置.txt
+2.相机矫正结果calib_results.mat
+3.begin文件夹||next文件夹,其中分别有begin_rect系列相片和next_rect系列相片.其中begin文件夹中需要包含board.mat的数据,其中有格数:Nx,Ny,边长:dx,dy
+4.Lerr2.mat和begin_cams.mat(用reset3D函数生成)

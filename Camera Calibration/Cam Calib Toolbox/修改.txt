@@ -1,0 +1,20 @@
+click_ima_calib_no_read.m
+
+300多行
+%%%%%%%%%%%%自己添加的程序
+xcorners=grid_pts(1,:)+1;
+ycorners=grid_pts(2,:)+1;
+save([calib_name num2str(kk) '_corners.mat'], 'xcorners', 'ycorners');
+clear xcorners ycorners
+%%%%%%%%%%%%%%%%%
+
+271行
+click_ima_calib.m
+%%%%%%%%%%%%自己添加的程序
+xcorners=grid_pts(1,:)+1;
+ycorners=grid_pts(2,:)+1;
+save([calib_name num2str(kk) '_corners.mat'], 'xcorners', 'ycorners');
+clear xcorners ycorners
+%%%%%%%%%%%%%%%%%
+
+
