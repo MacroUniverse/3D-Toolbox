@@ -1,5 +1,7 @@
 % orientation
-%cam需用到Pcam和xi
+% cam需用到Pcam和xi
+% 输出只有 cam33 被修改
+% 相机会把 mn1 精确瞄准 P1, mn2 和 P2 只是用于旋转
 
 function cam=ori(Pmn2,cam)
 

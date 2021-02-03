@@ -60,13 +60,6 @@ elseif strcmp(camera,'H50')
    xi=1380;
 end
     
-    %按格式合并
-    
-                                                                               %根据新的mn格式, 特此修改
-                                                                               cam33(1,:)=-cam33(1,:);
-                                                                               cam33(2,:)=-cam33(2,:);
-                                                                              %%%%%
-    
-                                                                             
+    %按格式合并                                                        
     cam=[cam33;Pcam;Ploc;alpha,beta,xi];
 end

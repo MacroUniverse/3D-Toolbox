@@ -17,7 +17,7 @@ end
 end
 
 function v=f1(mn,cam)
-m=-mn(1);                                                           %根据新mn格式, 特别加一负号
+m=mn(1);
 n=mn(2);
 
 if isinf(m) %无穷远点
@@ -35,10 +35,10 @@ if isinf(m) %无穷远点
       v=[x y z];
    end
 else
-    if vmag(mn)==0;     % 指向k
+    if vmag(mn)==0   % 指向k
       v=[0 0 1];
     else    %正常
-     v=vunit([-m,n,cam(6,3)]);
+     v=[m,n,cam(6,3)]; v = v/norm(v);
     end
 end
 
