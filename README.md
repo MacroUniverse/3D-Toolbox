@@ -1,5 +1,6 @@
 # 3D-Toolbox
  本科挑战杯项目：多视角图片序列的三维重建
+ 完整文档见： 3D reconstruction toolbox.pdf
 
 # TODO
 * 整理出文档， 分享到 GitHub 上
